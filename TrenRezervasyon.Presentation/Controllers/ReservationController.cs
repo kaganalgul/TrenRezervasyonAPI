@@ -16,6 +16,7 @@ namespace TrenRezervasyon.Presentation.Controllers
         }
 
         [HttpPost]
+        [Route("/check-reservation")]
         public async Task<IActionResult> CheckReservation([FromBody] CheckReservationQueryRequest requestModel)
         {
             CheckReservationQueryResponse response = await _mediator.Send(requestModel);
