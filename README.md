@@ -6,7 +6,7 @@
 ```javascript
 {
     "Tren":
-    {   "Id":"1",
+    {   
         "Ad":"Başkent Ekspres",
         "Vagonlar":
         [
