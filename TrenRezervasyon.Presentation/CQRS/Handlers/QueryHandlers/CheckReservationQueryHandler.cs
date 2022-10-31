@@ -17,7 +17,7 @@ namespace TrenRezervasyon.Presentation.CQRS.Handlers.QueryHandlers
                 decimal kisiSayisi = request.RezervasyonYapilacakKisiSayisi;             
                 decimal trenBosKoltukSayisi = RezervasyonHelpers.TrenBosKoltukSayisi(request.Tren);
 
-                if (tren == null || request.RezervasyonYapilacakKisiSayisi > trenBosKoltukSayisi || request.RezervasyonYapicalakKisiSayisi <= 0)
+                if (tren == null || request.RezervasyonYapilacakKisiSayisi > trenBosKoltukSayisi || request.RezervasyonYapilacakKisiSayisi <= 0)
                 {
                     return response;
                 }
